@@ -7,11 +7,30 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.*;
 
-public class SimpleServer extends Server {
+public class BlockingServer extends Server {
 
-    public SimpleServer(ServerSocket serverSocket, int maxClients, int x) {
+    public BlockingServer(ServerSocket serverSocket, int maxClients, int x) {
         super(serverSocket, maxClients, x);
+    }
+
+
+    private static final int NUMBER_OF_THREADS = 4;
+    private final ExecutorService threadPool = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
+
+    private static class sortQuery implements Callable<List<Integer>> {
+
+        private List<Integer> listToSort;
+
+        private sortQuery(List<Integer> listToSort) {
+            this.listToSort = listToSort;
+        }
+
+        @Override
+        public List<Integer> call() throws Exception {
+            return Util.sort(listToSort);
+        }
     }
 
     private class SimpleHandler implements Runnable {
@@ -42,7 +61,8 @@ public class SimpleServer extends Server {
                     ServerProtocols.ArrayMsg msg = ServerProtocols.ArrayMsg.parseDelimitedFrom(is);
                     long calcStartTime = System.currentTimeMillis();
 
-                    List<Integer> result = Util.sort(msg.getNumberList());
+                    Future<List<Integer>> future = threadPool.submit(new sortQuery(msg.getNumberList()));
+                    List<Integer> result = future.get();
 
                     calcTimes.add((int) (System.currentTimeMillis() - calcStartTime));
 
@@ -52,9 +72,8 @@ public class SimpleServer extends Server {
 
                     builder.build().writeDelimitedTo(os);
                     handleTimes.add((int) (System.currentTimeMillis() - handleStartTime));
-
                 }
-            } catch (IOException e) {
+            } catch (IOException | InterruptedException | ExecutionException e) {
                 e.printStackTrace();
             }
         }
@@ -88,6 +107,7 @@ public class SimpleServer extends Server {
         int averageCalcTime = (int)Math.round(handlers.stream().mapToInt(SimpleHandler::getCalcTime).average().orElse(0));
         int averageHandleTime = (int)Math.round(handlers.stream().mapToInt(SimpleHandler::getHandleTime).average().orElse(0));
 
+        threadPool.shutdown();
         return new TestResult(averageCalcTime, averageHandleTime);
     }
 }

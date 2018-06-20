@@ -4,14 +4,14 @@ import java.net.ServerSocket;
 
 public abstract class Server {
     protected final ServerSocket serverSocket;
-    protected final StatLogger logger;
     protected final int maxClients;
+    protected final int x;
 
-    public Server(ServerSocket serverSocket, StatLogger logger, int maxClients) {
+    public Server(ServerSocket serverSocket, int maxClients, int x) {
         this.serverSocket = serverSocket;
-        this.logger = logger;
         this.maxClients = maxClients;
+        this.x = x;
     }
 
-    public abstract void start();
+    public abstract TestResult start();
 }

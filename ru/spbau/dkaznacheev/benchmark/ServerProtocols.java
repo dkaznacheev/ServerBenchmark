@@ -3,8 +3,8 @@
 
 package ru.spbau.dkaznacheev.benchmark;
 
-public final class ServerParameters {
-  private ServerParameters() {}
+public final class ServerProtocols {
+  private ServerProtocols() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -25,7 +25,7 @@ public final class ServerParameters {
     /**
      * <code>required string architecture = 1;</code>
      */
-    String getArchitecture();
+    java.lang.String getArchitecture();
     /**
      * <code>required string architecture = 1;</code>
      */
@@ -39,7 +39,7 @@ public final class ServerParameters {
     /**
      * <code>required string parameter = 2;</code>
      */
-    String getParameter();
+    java.lang.String getParameter();
     /**
      * <code>required string parameter = 2;</code>
      */
@@ -133,7 +133,7 @@ public final class ServerParameters {
       d_ = 0;
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -144,7 +144,7 @@ public final class ServerParameters {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -225,19 +225,19 @@ public final class ServerParameters {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.internal_static_ServerBenchmark_ServerParametersMsg_descriptor;
+      return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ServerParametersMsg_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.internal_static_ServerBenchmark_ServerParametersMsg_fieldAccessorTable
+      return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ServerParametersMsg_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg.class, ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg.Builder.class);
+              ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg.class, ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg.Builder.class);
     }
 
     private int bitField0_;
     public static final int ARCHITECTURE_FIELD_NUMBER = 1;
-    private volatile Object architecture_;
+    private volatile java.lang.Object architecture_;
     /**
      * <code>required string architecture = 1;</code>
      */
@@ -247,14 +247,14 @@ public final class ServerParameters {
     /**
      * <code>required string architecture = 1;</code>
      */
-    public String getArchitecture() {
-      Object ref = architecture_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getArchitecture() {
+      java.lang.Object ref = architecture_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           architecture_ = s;
         }
@@ -266,11 +266,11 @@ public final class ServerParameters {
      */
     public com.google.protobuf.ByteString
         getArchitectureBytes() {
-      Object ref = architecture_;
-      if (ref instanceof String) {
+      java.lang.Object ref = architecture_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         architecture_ = b;
         return b;
       } else {
@@ -279,7 +279,7 @@ public final class ServerParameters {
     }
 
     public static final int PARAMETER_FIELD_NUMBER = 2;
-    private volatile Object parameter_;
+    private volatile java.lang.Object parameter_;
     /**
      * <code>required string parameter = 2;</code>
      */
@@ -289,14 +289,14 @@ public final class ServerParameters {
     /**
      * <code>required string parameter = 2;</code>
      */
-    public String getParameter() {
-      Object ref = parameter_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getParameter() {
+      java.lang.Object ref = parameter_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           parameter_ = s;
         }
@@ -308,11 +308,11 @@ public final class ServerParameters {
      */
     public com.google.protobuf.ByteString
         getParameterBytes() {
-      Object ref = parameter_;
-      if (ref instanceof String) {
+      java.lang.Object ref = parameter_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         parameter_ = b;
         return b;
       } else {
@@ -547,15 +547,15 @@ public final class ServerParameters {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg)) {
+      if (!(obj instanceof ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg)) {
         return super.equals(obj);
       }
-      ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg other = (ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg) obj;
+      ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg other = (ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg) obj;
 
       boolean result = true;
       result = result && (hasArchitecture() == other.hasArchitecture());
@@ -607,7 +607,7 @@ public final class ServerParameters {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -655,69 +655,69 @@ public final class ServerParameters {
       return hash;
     }
 
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(byte[] data)
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(java.io.InputStream input)
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseDelimitedFrom(java.io.InputStream input)
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseDelimitedFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parseFrom(
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -729,7 +729,7 @@ public final class ServerParameters {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg prototype) {
+    public static Builder newBuilder(ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -737,7 +737,7 @@ public final class ServerParameters {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -749,20 +749,20 @@ public final class ServerParameters {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ServerBenchmark.ServerParametersMsg)
-        ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsgOrBuilder {
+        ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsgOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.internal_static_ServerBenchmark_ServerParametersMsg_descriptor;
+        return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ServerParametersMsg_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.internal_static_ServerBenchmark_ServerParametersMsg_fieldAccessorTable
+        return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ServerParametersMsg_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg.class, ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg.Builder.class);
+                ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg.class, ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg.Builder.class);
       }
 
-      // Construct using ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg.newBuilder()
+      // Construct using ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -802,23 +802,23 @@ public final class ServerParameters {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.internal_static_ServerBenchmark_ServerParametersMsg_descriptor;
+        return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ServerParametersMsg_descriptor;
       }
 
-      public ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg getDefaultInstanceForType() {
-        return ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg.getDefaultInstance();
+      public ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg getDefaultInstanceForType() {
+        return ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg.getDefaultInstance();
       }
 
-      public ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg build() {
-        ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg result = buildPartial();
+      public ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg build() {
+        ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg buildPartial() {
-        ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg result = new ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg(this);
+      public ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg buildPartial() {
+        ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg result = new ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -867,7 +867,7 @@ public final class ServerParameters {
       }
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
       public Builder clearField(
@@ -880,25 +880,25 @@ public final class ServerParameters {
       }
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg) {
-          return mergeFrom((ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg)other);
+        if (other instanceof ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg) {
+          return mergeFrom((ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg other) {
-        if (other == ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg.getDefaultInstance()) return this;
+      public Builder mergeFrom(ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg other) {
+        if (other == ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg.getDefaultInstance()) return this;
         if (other.hasArchitecture()) {
           bitField0_ |= 0x00000001;
           architecture_ = other.architecture_;
@@ -970,11 +970,11 @@ public final class ServerParameters {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg parsedMessage = null;
+        ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg) e.getUnfinishedMessage();
+          parsedMessage = (ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -985,7 +985,7 @@ public final class ServerParameters {
       }
       private int bitField0_;
 
-      private Object architecture_ = "";
+      private java.lang.Object architecture_ = "";
       /**
        * <code>required string architecture = 1;</code>
        */
@@ -995,18 +995,18 @@ public final class ServerParameters {
       /**
        * <code>required string architecture = 1;</code>
        */
-      public String getArchitecture() {
-        Object ref = architecture_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getArchitecture() {
+        java.lang.Object ref = architecture_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             architecture_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1014,11 +1014,11 @@ public final class ServerParameters {
        */
       public com.google.protobuf.ByteString
           getArchitectureBytes() {
-        Object ref = architecture_;
+        java.lang.Object ref = architecture_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           architecture_ = b;
           return b;
         } else {
@@ -1029,7 +1029,7 @@ public final class ServerParameters {
        * <code>required string architecture = 1;</code>
        */
       public Builder setArchitecture(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1061,7 +1061,7 @@ public final class ServerParameters {
         return this;
       }
 
-      private Object parameter_ = "";
+      private java.lang.Object parameter_ = "";
       /**
        * <code>required string parameter = 2;</code>
        */
@@ -1071,18 +1071,18 @@ public final class ServerParameters {
       /**
        * <code>required string parameter = 2;</code>
        */
-      public String getParameter() {
-        Object ref = parameter_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getParameter() {
+        java.lang.Object ref = parameter_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             parameter_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1090,11 +1090,11 @@ public final class ServerParameters {
        */
       public com.google.protobuf.ByteString
           getParameterBytes() {
-        Object ref = parameter_;
+        java.lang.Object ref = parameter_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           parameter_ = b;
           return b;
         } else {
@@ -1105,7 +1105,7 @@ public final class ServerParameters {
        * <code>required string parameter = 2;</code>
        */
       public Builder setParameter(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1375,16 +1375,16 @@ public final class ServerParameters {
     }
 
     // @@protoc_insertion_point(class_scope:ServerBenchmark.ServerParametersMsg)
-    private static final ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg DEFAULT_INSTANCE;
+    private static final ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg();
+      DEFAULT_INSTANCE = new ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg();
     }
 
-    public static ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg getDefaultInstance() {
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @Deprecated public static final com.google.protobuf.Parser<ServerParametersMsg>
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<ServerParametersMsg>
         PARSER = new com.google.protobuf.AbstractParser<ServerParametersMsg>() {
       public ServerParametersMsg parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -1398,12 +1398,660 @@ public final class ServerParameters {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ServerParametersMsg> getParserForType() {
       return PARSER;
     }
 
-    public ru.spbau.dkaznacheev.serverbenchmark.ServerParameters.ServerParametersMsg getDefaultInstanceForType() {
+    public ru.spbau.dkaznacheev.benchmark.ServerProtocols.ServerParametersMsg getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ArrayMsgOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ServerBenchmark.ArrayMsg)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required int32 length = 1;</code>
+     */
+    boolean hasLength();
+    /**
+     * <code>required int32 length = 1;</code>
+     */
+    int getLength();
+
+    /**
+     * <code>repeated int32 number = 2;</code>
+     */
+    java.util.List<java.lang.Integer> getNumberList();
+    /**
+     * <code>repeated int32 number = 2;</code>
+     */
+    int getNumberCount();
+    /**
+     * <code>repeated int32 number = 2;</code>
+     */
+    int getNumber(int index);
+  }
+  /**
+   * Protobuf type {@code ServerBenchmark.ArrayMsg}
+   */
+  public  static final class ArrayMsg extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ServerBenchmark.ArrayMsg)
+      ArrayMsgOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ArrayMsg.newBuilder() to construct.
+    private ArrayMsg(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ArrayMsg() {
+      length_ = 0;
+      number_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ArrayMsg(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              length_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                number_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              number_.add(input.readInt32());
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002) && input.getBytesUntilLimit() > 0) {
+                number_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                number_.add(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          number_ = java.util.Collections.unmodifiableList(number_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ArrayMsg_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ArrayMsg_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg.class, ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int LENGTH_FIELD_NUMBER = 1;
+    private int length_;
+    /**
+     * <code>required int32 length = 1;</code>
+     */
+    public boolean hasLength() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 length = 1;</code>
+     */
+    public int getLength() {
+      return length_;
+    }
+
+    public static final int NUMBER_FIELD_NUMBER = 2;
+    private java.util.List<java.lang.Integer> number_;
+    /**
+     * <code>repeated int32 number = 2;</code>
+     */
+    public java.util.List<java.lang.Integer>
+        getNumberList() {
+      return number_;
+    }
+    /**
+     * <code>repeated int32 number = 2;</code>
+     */
+    public int getNumberCount() {
+      return number_.size();
+    }
+    /**
+     * <code>repeated int32 number = 2;</code>
+     */
+    public int getNumber(int index) {
+      return number_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasLength()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, length_);
+      }
+      for (int i = 0; i < number_.size(); i++) {
+        output.writeInt32(2, number_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, length_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < number_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt32SizeNoTag(number_.get(i));
+        }
+        size += dataSize;
+        size += 1 * getNumberList().size();
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg)) {
+        return super.equals(obj);
+      }
+      ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg other = (ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg) obj;
+
+      boolean result = true;
+      result = result && (hasLength() == other.hasLength());
+      if (hasLength()) {
+        result = result && (getLength()
+            == other.getLength());
+      }
+      result = result && getNumberList()
+          .equals(other.getNumberList());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasLength()) {
+        hash = (37 * hash) + LENGTH_FIELD_NUMBER;
+        hash = (53 * hash) + getLength();
+      }
+      if (getNumberCount() > 0) {
+        hash = (37 * hash) + NUMBER_FIELD_NUMBER;
+        hash = (53 * hash) + getNumberList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ServerBenchmark.ArrayMsg}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ServerBenchmark.ArrayMsg)
+        ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsgOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ArrayMsg_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ArrayMsg_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg.class, ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg.Builder.class);
+      }
+
+      // Construct using ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        length_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        number_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return ru.spbau.dkaznacheev.benchmark.ServerProtocols.internal_static_ServerBenchmark_ArrayMsg_descriptor;
+      }
+
+      public ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg getDefaultInstanceForType() {
+        return ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg.getDefaultInstance();
+      }
+
+      public ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg build() {
+        ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg buildPartial() {
+        ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg result = new ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.length_ = length_;
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          number_ = java.util.Collections.unmodifiableList(number_);
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.number_ = number_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg) {
+          return mergeFrom((ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg other) {
+        if (other == ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg.getDefaultInstance()) return this;
+        if (other.hasLength()) {
+          setLength(other.getLength());
+        }
+        if (!other.number_.isEmpty()) {
+          if (number_.isEmpty()) {
+            number_ = other.number_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureNumberIsMutable();
+            number_.addAll(other.number_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasLength()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int length_ ;
+      /**
+       * <code>required int32 length = 1;</code>
+       */
+      public boolean hasLength() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 length = 1;</code>
+       */
+      public int getLength() {
+        return length_;
+      }
+      /**
+       * <code>required int32 length = 1;</code>
+       */
+      public Builder setLength(int value) {
+        bitField0_ |= 0x00000001;
+        length_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 length = 1;</code>
+       */
+      public Builder clearLength() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        length_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<java.lang.Integer> number_ = java.util.Collections.emptyList();
+      private void ensureNumberIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          number_ = new java.util.ArrayList<java.lang.Integer>(number_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated int32 number = 2;</code>
+       */
+      public java.util.List<java.lang.Integer>
+          getNumberList() {
+        return java.util.Collections.unmodifiableList(number_);
+      }
+      /**
+       * <code>repeated int32 number = 2;</code>
+       */
+      public int getNumberCount() {
+        return number_.size();
+      }
+      /**
+       * <code>repeated int32 number = 2;</code>
+       */
+      public int getNumber(int index) {
+        return number_.get(index);
+      }
+      /**
+       * <code>repeated int32 number = 2;</code>
+       */
+      public Builder setNumber(
+          int index, int value) {
+        ensureNumberIsMutable();
+        number_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 number = 2;</code>
+       */
+      public Builder addNumber(int value) {
+        ensureNumberIsMutable();
+        number_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 number = 2;</code>
+       */
+      public Builder addAllNumber(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureNumberIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, number_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 number = 2;</code>
+       */
+      public Builder clearNumber() {
+        number_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ServerBenchmark.ArrayMsg)
+    }
+
+    // @@protoc_insertion_point(class_scope:ServerBenchmark.ArrayMsg)
+    private static final ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg();
+    }
+
+    public static ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<ArrayMsg>
+        PARSER = new com.google.protobuf.AbstractParser<ArrayMsg>() {
+      public ArrayMsg parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ArrayMsg(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ArrayMsg> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ArrayMsg> getParserForType() {
+      return PARSER;
+    }
+
+    public ru.spbau.dkaznacheev.benchmark.ServerProtocols.ArrayMsg getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1414,6 +2062,11 @@ public final class ServerParameters {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ServerBenchmark_ServerParametersMsg_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ServerBenchmark_ArrayMsg_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ServerBenchmark_ArrayMsg_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1422,14 +2075,15 @@ public final class ServerParameters {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\027server_parameters.proto\022\017ServerBenchma" +
       "rk\"\225\001\n\023ServerParametersMsg\022\024\n\014architectu" +
       "re\030\001 \002(\t\022\021\n\tparameter\030\002 \002(\t\022\t\n\001x\030\003 \002(\005\022\014" +
       "\n\004pMin\030\004 \002(\005\022\014\n\004pMax\030\005 \002(\005\022\r\n\005pStep\030\006 \002(" +
-      "\005\022\t\n\001n\030\007 \002(\005\022\t\n\001m\030\010 \002(\005\022\t\n\001d\030\t \002(\005B8\n$ru" +
-      ".spbau.dkaznacheev.serverbenchmarkB\020Serv" +
-      "erParameters"
+      "\005\022\t\n\001n\030\007 \002(\005\022\t\n\001m\030\010 \002(\005\022\t\n\001d\030\t \002(\005\"*\n\010Ar" +
+      "rayMsg\022\016\n\006length\030\001 \002(\005\022\016\n\006number\030\002 \003(\005B1" +
+      "\n\036ru.spbau.dkaznacheev.benchmarkB\017Server" +
+      "Protocols"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1448,7 +2102,13 @@ public final class ServerParameters {
     internal_static_ServerBenchmark_ServerParametersMsg_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ServerBenchmark_ServerParametersMsg_descriptor,
-        new String[] { "Architecture", "Parameter", "X", "PMin", "PMax", "PStep", "N", "M", "D", });
+        new java.lang.String[] { "Architecture", "Parameter", "X", "PMin", "PMax", "PStep", "N", "M", "D", });
+    internal_static_ServerBenchmark_ArrayMsg_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_ServerBenchmark_ArrayMsg_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ServerBenchmark_ArrayMsg_descriptor,
+        new java.lang.String[] { "Length", "Number", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
